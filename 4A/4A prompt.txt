@@ -1,0 +1,53 @@
+Role:
+Act as an expert business data analyst and front-end UI/UX content strategist.
+
+Context:
+An Employee Performance Analysis Report generated from a multi-column dataset (converted from Excel to CSV).
+
+The dataset includes:
+employee ID
+department
+monthly performance score
+attendance percentage
+projects completed
+rating (1–5)
+promotion eligibility (yes/no)
+
+Task:
+1. Analyze the dataset and derive meaningful insights.
+2. Summarize key findings such as:
+   - overall company performance
+   - top-performing employees
+   - department-wise performance
+   - rating distribution
+   - promotion eligibility trends
+   - attendance vs performance relationship
+3. Design a professional landing page to present these insights.
+
+Target Audience:
+HR managers
+team leads
+company executives
+
+Requirements:
+- Create a structured landing page layout
+- Include:
+  • Hero section with title and subtitle  
+  • Overall performance summary  
+  • Top performers section  
+  • Department-wise insights  
+  • Rating distribution  
+  • Promotion eligibility statistics  
+  • Attendance vs performance insights  
+  • Recommendations  
+
+- Use professional corporate language
+- Suggest charts/visuals (bar chart, pie chart, etc.)
+- Keep design clean and business-oriented
+
+Format:
+1. First provide section-wise content plan
+2. Then generate full HTML landing page code
+
+Data Input Placeholder:
+“Data context: [Paste summary of employee performance analysis here]”

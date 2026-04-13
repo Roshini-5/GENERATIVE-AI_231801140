@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Report Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: Arial; background:#f4f6f8; }
+        .grid {
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:10px;
+        }
+        .card {
+            background:white;
+            padding:10px;
+            border-radius:8px;
+        }
+        canvas { max-height:150px; }
+        h4 { margin:5px; font-size:14px; }
+    </style>
+</head>
+
+<body>
+
+<h2>School Report Dashboard</h2>
+
+<div class="grid">
+
+<div class="card">
+<h4>Academic Performance</h4>
+<canvas id="acad"></canvas>
+</div>
+
+<div class="card">
+<h4>Co-curricular</h4>
+<canvas id="co"></canvas>
+</div>
+
+<div class="card">
+<h4>Infrastructure</h4>
+<canvas id="infra"></canvas>
+</div>
+
+<div class="card">
+<h4>Faculty</h4>
+<canvas id="faculty"></canvas>
+</div>
+
+<div class="card">
+<h4>Achievements</h4>
+<canvas id="achieve"></canvas>
+</div>
+
+<div class="card">
+<h4>Future Plans</h4>
+<canvas id="future"></canvas>
+</div>
+
+</div>
+
+<script>
+
+// Academic
+new Chart(document.getElementById("acad"), {
+    type: "bar",
+    data: {
+        labels: ["Pass %","70%+","Top"],
+        datasets: [{
+            data: [100,70,90]
+        }]
+    }
+});
+
+// Co-curricular
+new Chart(document.getElementById("co"), {
+    type: "pie",
+    data: {
+        labels: ["Sports","Cultural"],
+        datasets: [{
+            data: [3,1]
+        }]
+    }
+});
+
+// Infrastructure
+new Chart(document.getElementById("infra"), {
+    type: "doughnut",
+    data: {
+        labels: ["Smart","Labs","Digital"],
+        datasets: [{
+            data: [1,1,1]
+        }]
+    }
+});
+
+// Faculty
+new Chart(document.getElementById("faculty"), {
+    type: "bar",
+    data: {
+        labels: ["Training","Modern"],
+        datasets: [{
+            data: [1,1]
+        }]
+    }
+});
+
+// Achievements
+new Chart(document.getElementById("achieve"), {
+    type: "pie",
+    data: {
+        labels: ["Medals","International"],
+        datasets: [{
+            data: [2,1]
+        }]
+    }
+});
+
+// Future Plans
+new Chart(document.getElementById("future"), {
+    type: "bar",
+    data: {
+        labels: ["Academic","Infra","Holistic"],
+        datasets: [{
+            data: [1,1,1]
+        }]
+    }
+});
+
+</script>
+
+</body>
+</html>

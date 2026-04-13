@@ -1,0 +1,77 @@
+Act as an educational data analyst.
+
+Analyze the given School Annual Report and extract the most important points.
+
+Include the following aspects:
+- Academic performance (results, pass percentage, toppers)
+- Achievements and recognitions
+- Sports and physical development
+- Student activities and co-curricular development
+- Staff/faculty development
+- Infrastructure developments
+- School environment and vision
+- Future plans and goals
+
+Instructions:
+- Present the output in a clear, structured format.
+- Use headings and bullet points.
+- Highlight important values using bold (e.g., percentages, ranks, scores).
+- Keep the language simple and professional.
+- Ensure the content is well-organized and easy to read.
+
+Output Format:
+
+Start with:
+"Here is a clear, structured analysis of the School Annual Report with key insights extracted:"
+
+Then follow this structure exactly:
+
+---
+
+# 📊 School Annual Report Analysis – Key Points
+
+## 🎓 Academic Performance
+- Include pass percentage
+- Class-wise performance
+- Toppers and scores
+- Improvement measures
+
+## 🏆 Achievements & Recognition
+- Awards, medals, competitions
+- National/international participation
+
+## ⚽ Sports & Physical Development
+- Sports activities
+- Achievements
+- Facilities
+
+## 🎭 Student Activities & Co-Curricular Development
+- Events conducted
+- Clubs/activities
+- Skills developed
+
+## 👩‍🏫 Staff Development
+- Training programs
+- Teaching methods
+- Professional development
+
+## 🏫 Infrastructure Development
+- Labs, classrooms, library
+- Digital tools and smart classes
+
+## 🌱 School Environment & Vision
+- Values and culture
+- Holistic development focus
+
+## 🔮 Future Plans & Goals
+- Academic goals
+- Infrastructure improvements
+- Student development plans
+
+## 🧾 Overall Summary
+- Final overall conclusion of the report
+
+---
+
+Input:
+[Paste School Annual Report here]

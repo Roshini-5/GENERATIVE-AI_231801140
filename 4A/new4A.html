@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Dashboard</title>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f8;
+            margin: 0;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .card {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        canvas {
+            max-height: 200px;
+        }
+        h3 {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Employee Performance Dashboard</h2>
+</header>
+
+<div class="grid">
+
+    <!-- Top Performers -->
+    <div class="card">
+        <h3>Top Performers</h3>
+        <canvas id="topChart"></canvas>
+    </div>
+
+    <!-- Department -->
+    <div class="card">
+        <h3>Department Performance</h3>
+        <canvas id="deptChart"></canvas>
+    </div>
+
+    <!-- Rating -->
+    <div class="card">
+        <h3>Rating Distribution</h3>
+        <canvas id="ratingChart"></canvas>
+    </div>
+
+    <!-- Promotion -->
+    <div class="card">
+        <h3>Promotion Eligibility</h3>
+        <canvas id="promoChart"></canvas>
+    </div>
+
+    <!-- Attendance -->
+    <div class="card">
+        <h3>Attendance vs Performance</h3>
+        <canvas id="scatterChart"></canvas>
+    </div>
+
+</div>
+
+<script>
+
+// 🔹 Top Performers (Bar)
+new Chart(document.getElementById("topChart"), {
+    type: "bar",
+    data: {
+        labels: ["Emp1","Emp2","Emp3","Emp4","Emp5"],
+        datasets: [{
+            label: "Score %",
+            data: [92, 95, 93, 96, 94],
+            backgroundColor: "blue"
+        }]
+    }
+});
+
+// 🔹 Department Insights (Bar)
+new Chart(document.getElementById("deptChart"), {
+    type: "bar",
+    data: {
+        labels: ["IT","HR","Sales"],
+        datasets: [{
+            label: "Performance",
+            data: [90, 70, 75],
+            backgroundColor: ["green","orange","red"]
+        }]
+    }
+});
+
+// 🔹 Rating Distribution (Pie)
+new Chart(document.getElementById("ratingChart"), {
+    type: "pie",
+    data: {
+        labels: ["Rating 3","Rating 4","Rating 5"],
+        datasets: [{
+            data: [40, 45, 15],
+            backgroundColor: ["yellow","blue","purple"]
+        }]
+    }
+});
+
+// 🔹 Promotion (Doughnut)
+new Chart(document.getElementById("promoChart"), {
+    type: "doughnut",
+    data: {
+        labels: ["Eligible","Not Eligible"],
+        datasets: [{
+            data: [30, 70],
+            backgroundColor: ["green","gray"]
+        }]
+    }
+});
+
+// 🔹 Attendance vs Performance (Scatter)
+new Chart(document.getElementById("scatterChart"), {
+    type: "scatter",
+    data: {
+        datasets: [{
+            label: "Employees",
+            data: [
+                {x: 80, y: 70},
+                {x: 85, y: 75},
+                {x: 90, y: 85},
+                {x: 95, y: 90},
+                {x: 88, y: 80}
+            ],
+            backgroundColor: "red"
+        }]
+    },
+    options: {
+        scales: {
+            x: { title: { display: true, text: "Attendance %" }},
+            y: { title: { display: true, text: "Performance %" }}
+        }
+    }
+});
+
+</script>
+
+</body>
+</html>
