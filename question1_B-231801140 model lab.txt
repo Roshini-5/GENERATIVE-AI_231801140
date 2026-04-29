@@ -1,0 +1,76 @@
+You are solving multiple-choice algebra problems using different prompting strategies. 
+For each method below, solve the same problem and provide the answer.
+
+Problem:
+A number is doubled and then increased by 6. The result is 20. What is the number?
+
+Options:
+A) 5
+B) 6
+C) 7
+D) 8
+
+
+-----------------------------------
+1. Zero-Shot
+-----------------------------------
+Solve the problem directly without examples.
+Give only the correct option.
+
+
+-----------------------------------
+2. One-Shot
+-----------------------------------
+Example:
+A number plus 5 is 15.
+Options: A) 5 B) 10 C) 15 D) 20
+Answer: B) 10
+
+Now solve the given problem.
+Give only the correct option.
+
+
+-----------------------------------
+3. Few-Shot
+-----------------------------------
+Example 1:
+A number plus 5 is 15.
+Options: A) 5 B) 10 C) 15 D) 20
+Answer: B) 10
+
+Example 2:
+Three times a number is 21.
+Options: A) 5 B) 6 C) 7 D) 8
+Answer: C) 7
+
+Example 3:
+Twice a number plus 4 is 10.
+Options: A) 2 B) 3 C) 4 D) 5
+Answer: B) 3
+
+Now solve the given problem.
+Give only the correct option.
+
+
+-----------------------------------
+4. Chain-of-Thought (CoT)
+-----------------------------------
+Solve the problem step by step.
+Show reasoning clearly, then give the final answer.
+
+
+-----------------------------------
+5. Zero-Shot Chain-of-Thought
+-----------------------------------
+Solve the problem.
+Let’s think step by step before selecting the correct option.
+
+
+-----------------------------------
+Output Format:
+-----------------------------------
+Zero-shot Answer: 
+One-shot Answer: 
+Few-shot Answer: 
+Chain-of-Thought Answer: 
+Zero-shot CoT Answer:
